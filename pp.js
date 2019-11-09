@@ -202,12 +202,12 @@ console.error(err);
 
 var config = {
   events: [
-    {type: "CHANNEL_CREATE", logType: "CHANNEL_CREATE", limit: 1 , delay: 50000},
-    {type: "CHANNEL_DELETE", logType: "CHANNEL_DELETE", limit: 1, delay: 50000},
-    {type: "GUILD_MEMBER_REMOVE", logType: "MEMBER_KICK", limit: 1, delay: 50000},
-    {type: "GUILD_BAN_ADD", logType: "MEMBER_BAN_ADD", limit: 1, delay: 50000},
-    {type: "GUILD_ROLE_CREATE", logType: "ROLE_CREATE", limit: 1, delay: 50000},
-    {type: "GUILD_ROLE_DELETE", logType: "ROLE_DELETE", limit: 1, delay: 50000},
+    {type: "CHANNEL_CREATE", logType: "CHANNEL_CREATE", limit: 1 , delay: 1000},
+    {type: "CHANNEL_DELETE", logType: "CHANNEL_DELETE", limit: 1, delay: 1000},
+    {type: "GUILD_MEMBER_REMOVE", logType: "MEMBER_KICK", limit: 1, delay: 1000},
+    {type: "GUILD_BAN_ADD", logType: "MEMBER_BAN_ADD", limit: 1, delay: 1000},
+    {type: "GUILD_ROLE_CREATE", logType: "ROLE_CREATE", limit: 1, delay: 1000},
+    {type: "GUILD_ROLE_DELETE", logType: "ROLE_DELETE", limit: 1, delay: 1000},
   ]
 }
 client.on("error", (e) => console.error(e));
@@ -262,12 +262,12 @@ client.on("reachLimit", (limit)=> {
 
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`Desert Bot- Script By : ! ૨ᴘ૨ | Kaizo‘✟💘Y#4211`);
+      console.log(`Desert Bot- Script By : ! ૨ᴘ૨ | GUMBALLᴱᵗʸ#3651`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : ! ૨ᴘ૨ | ! ૨ᴘ૨ |KaiZo‘✟ ' `);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : GUMBALLᴱᵗʸ#3651);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`hackerni‘`,"http://twitch.tv/S-F")
+client.user.setGame(`7 IRZA9`,"http://twitch.tv/gmbl__")
 client.user.setStatus("dnd")
 });
 
