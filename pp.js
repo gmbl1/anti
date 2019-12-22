@@ -305,15 +305,43 @@ client.on("reachLimit", (limit)=> {
     });
   });
 
-client.on('ready', () => {
-   console.log(`----------------`);
-      console.log(`Desert Bot- Script By : ! ૨ᴘ૨ | Kaizo‘✟💘Y#4211`);
-        console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : ! ૨ᴘ૨ | ! ૨ᴘ૨ |KaiZo‘✟ ' `);
-    console.log(`----------------`);
+client.on('ready', function(){
+    var ms = 2000 ;
+    var setGame = [' Dev | Gumballᴱᵗʸ#2020 ',`🔥 Jh Gang 🔥`,` ❤ Jh Gang ❤`,' 🧡 Jh Gang 🧡 ','🔰 Jh Gang 🔰'];
+    var i = -1;
+    var j = 0;
+    setInterval(function (){
+        if( i == -1 ){
+            j = 1;
+        }
+        if( i == (setGame.length)-1 ){
+            j = -1;
+        }
+        i = i+j;
+        client.user.setGame(setGame[i],`http://www.twitch.tv/gmbl__`);
+    }, ms);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`IRZA9_إرزاق`,"http://twitch.tv/gmbl__ ")
-client.user.setStatus("dnd")
+  console.log('')
+  console.log('')
+  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
+  console.log(`[Start] ${new Date()}`);
+  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════════════════════════════]╗');
+  console.log(`Logged in as * [ " ${client.user.username} " ]`);
+  console.log('')
+  console.log('Informations :')
+  console.log('')
+  console.log(`servers! [ " ${client.guilds.size} " ]`);
+  console.log(`Users! [ " ${client.users.size} " ]`);
+  console.log(`channels! [ " ${client.channels.size} " ]`);
+  console.log('╚[════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════]╗')
+  console.log(' Bot Is Online')
+  console.log('╚[════════════]╝')
+  console.log('')
+  console.log('')
 });
 
 
