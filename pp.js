@@ -307,7 +307,7 @@ client.on("reachLimit", (limit)=> {
 
 client.on('ready', function(){
     var ms = 2000 ;
-    var setGame = [' ',`🔥 Jh Gang 🔥`,` ❤ MER7BA BRJO3 ❤`,' 🧡 SAMURAI 🧡 ','🔰 SAMURAI 🔰'];
+    var setGame = ['🔥 Jh Gang 🔥',`🔥 MER7BA  🔥`,` ❤ BRJO3 ❤`,' 🧡 SAMURAI 🧡 ','🔰 SAMURAI 🔰'];
     var i = -1;
     var j = 0;
     setInterval(function (){
